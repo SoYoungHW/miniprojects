@@ -14,9 +14,9 @@
 # ![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png)
 # ![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png)
 
-<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png" width="300" height="300"/>
 
-<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png" width="500" height="500"/>
+<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png" width="300" height="300"/>
+<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png" width="300" height="300"/>
 
 
 ## DB연동 GUI 개발 학습
