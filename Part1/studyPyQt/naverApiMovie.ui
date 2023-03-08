@@ -70,7 +70,7 @@
         <item>
          <widget class="QLabel" name="label">
           <property name="text">
-           <string>검색어 : </string>
+           <string>영화명 : </string>
           </property>
          </widget>
         </item>
