@@ -5,7 +5,10 @@
 - PyQT 복습
 - QtDesigner 학습
 - Naver API 뉴스검색 앱 만들기
-
+  - Python 3.11.2
+  - PyQt5
+  - Qt Designer
+  - Naver Open API
 ![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png)
 ![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png)
 
