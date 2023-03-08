@@ -5,7 +5,7 @@
 - PyQT 복습
 - QtDesigner 학습
 - Naver API 뉴스검색 앱 만들기
-![네이버뉴스앱]('C:\source\miniprojects\images')
+![네이버뉴스앱](C:\source\miniprojects\images)
 
 ## DB연동 GUI 개발 학습
 
