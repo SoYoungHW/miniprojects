@@ -9,8 +9,9 @@
   - PyQt5
   - Qt Designer
   - Naver Open API
-![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png)
-![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png)
+  
+![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png){: width="100" height="100"}
+![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png){: width="100" height="100"}
 
 
 ## DB연동 GUI 개발 학습
