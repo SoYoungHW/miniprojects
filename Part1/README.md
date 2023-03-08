@@ -11,9 +11,9 @@
   - Naver Open API
 
 
-# ![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png)
+--> ![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png)
 <img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png" width="300" height="300"/>
-# ![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png)
+--> ![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png)
 <img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png" width="300" height="300"/>
 
 
