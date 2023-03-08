@@ -22,7 +22,7 @@ class qtApp(QWidget):
 
     def btnOk_clicked(self):
         self.lblMessage.clear()
-        self.lblMessage.setText('메시지: OK!')
+        self.lblMessage.setText('메시지: OK!!!')
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
