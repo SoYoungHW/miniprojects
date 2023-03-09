@@ -15,7 +15,7 @@
 # ![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png)
 -->
 
-<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png" width="300" height="300"/>
+<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png" width="200" height="200"/>
 <img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png" width="500" height="500"/>
 
 
