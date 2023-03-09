@@ -16,7 +16,7 @@
 -->
 
 <!--<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png" width="200" height="200"/>-->
-<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png" width="650" height="500"/>
+<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png" width="600" height="500"/>
 
 
 ## DB연동 GUI 개발 학습
