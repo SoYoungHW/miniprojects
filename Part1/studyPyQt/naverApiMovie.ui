@@ -12,8 +12,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>400</height>
+    <width>800</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -24,14 +24,14 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>640</width>
-    <height>400</height>
+    <width>800</width>
+    <height>500</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>640</width>
-    <height>400</height>
+    <width>800</width>
+    <height>500</height>
    </size>
   </property>
   <property name="font">
@@ -40,14 +40,14 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>네이버API 뉴스검색앱</string>
+   <string>네이버API 영화검색앱</string>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>620</width>
+     <width>781</width>
      <height>71</height>
     </rect>
    </property>
@@ -55,15 +55,15 @@
     <item>
      <widget class="QGroupBox" name="groupBox">
       <property name="title">
-       <string>뉴스 검색</string>
+       <string>영화 검색</string>
       </property>
       <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
-         <x>30</x>
-         <y>24</y>
-         <width>571</width>
-         <height>31</height>
+         <x>10</x>
+         <y>14</y>
+         <width>761</width>
+         <height>51</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout">
@@ -95,8 +95,8 @@
     <rect>
      <x>10</x>
      <y>89</y>
-     <width>620</width>
-     <height>301</height>
+     <width>781</width>
+     <height>401</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="resultLayout">

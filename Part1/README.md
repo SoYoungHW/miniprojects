@@ -6,9 +6,8 @@
 - QtDesigner 학습
 - Naver API 뉴스검색 앱 만들기
   - Python 3.11.2
-  - PyQt5
-  - Qt Designer
-  - Naver Open API
+  - Naver OpenAPI 사용
+  - PyQt5 / Qt Designer
 
 <!--
 # ![네이버 뉴스앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png)
@@ -17,6 +16,14 @@
 
 <!--<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/navernews.png" width="200" height="200"/>-->
 <img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverNews02.png" width="500" height="400"/>
+
+- Naver API 영화검색 앱 만들기
+  - Python 3.11.2
+  - Naver OpenAPI 사용
+  - PyQt5 / Qt Designer
+  - urllib.request 이미지다운로드 사용 *
+
+<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/naverㅡmovie.png" width="500" height="400"/>
 
 
 ## DB연동 GUI 개발 학습
