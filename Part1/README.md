@@ -27,5 +27,16 @@
 
 
 ## DB연동 GUI 개발 학습
+- 주소록 프로그램 만들기
+  - Python 3.11.2
+  - MySQL 8.0 연동
+  - pymtsql 모듈 사용
+  - PyQt5 / Qt Designer
+  
+![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address.png)
+![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address02.png)
+![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address03.png)
+![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address04.png)
+
 
 ## 미니프로젝트 실습
