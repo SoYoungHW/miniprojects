@@ -46,7 +46,7 @@ class qtApp(QMainWindow):
             QMessageBox.about(self, '성공', '데이터를 삭제했습니다.')
 
             self.initDB()
-            self.btnDelClicked()
+            self.btnNewClicked()
 
     def btnNewClicked(self): # 신규버튼 누르면
         # 라인에디트 내용 삭제 후 이름에 포커스
