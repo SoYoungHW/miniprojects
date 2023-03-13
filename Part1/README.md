@@ -38,5 +38,18 @@
 ![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address03.png)
 ![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address04.png)
 
+## 파이썬 관련 추가학습
+- QR코드 생성 앱
+  - qrcode 모듈
+  - PyQt
+
+  ![QR코드앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/QR.png)
+
+- 컴퓨터 정보 출력 앱
+  - psutil 모듈
+  - socket 모듈
+  - requests 모듈
+
+  ![컴퓨터정보](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/cominfo.png)
 
 ## 미니프로젝트 실습
