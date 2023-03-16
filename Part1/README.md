@@ -65,9 +65,7 @@
 
 ![스레드비교](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Thread.png)
 
-- 이메일 보내기, 대량메일 전송
-
-![이메일](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/email.png)
+- 이메일, 대량메일 전송
 
 - PyGame
 
