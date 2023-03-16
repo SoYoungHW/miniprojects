@@ -63,8 +63,16 @@
 - 스레드 사용법
   - GUI와 처리시간이 긴 로직을 실행하면 반드시 스레드 사용
 
-![스레드](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Thread.png)
+![스레드비교](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Thread.png)
 
 - 이메일 보내기, 대량메일 전송
 
+![이메일](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/email.png)
+
+- PyGame
+
 ## 미니프로젝트 실습
+
+- GUI 키오스크 앱 만들기
+
+[팀리포지토리](https://github.com/annual-salary-investigation)
