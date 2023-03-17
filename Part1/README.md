@@ -32,11 +32,13 @@
   - MySQL 8.0 연동
   - pymtsql 모듈 사용
   - PyQt5 / Qt Designer
-  
-![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address.png)
-![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address02.png)
-![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address03.png)
-![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address04.png)
+
+<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address.png" width="300" align="left">
+<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address02.png" width="300" align="right">
+
+<figure class="half"> 
+<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address03.png" width="300" align="left">
+<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address04.png" width="300" align="right">
 
 ## 파이썬 관련 추가학습
 - QR코드 생성 앱
