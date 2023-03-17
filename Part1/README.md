@@ -34,11 +34,11 @@
   - PyQt5 / Qt Designer
   
 
-<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address.png" width="300" align="left">
+<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address.png" width="300">
 <img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address02.png" width="300" align="right">
 
-<br/>
-<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address03.png" width="300" align="left">
+
+<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address03.png" width="300"><br/>
 <img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address04.png" width="300" align="right">
 
 
