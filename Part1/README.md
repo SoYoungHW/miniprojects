@@ -36,7 +36,7 @@
 ![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address.png) | ![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address02.png)
 --- | --- |
 
-<img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address03.png" width="400"> | <img src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address04.png" width="400">
+![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address03.png) | ![주소록앱](https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/Address04.png)
 --- | --- |
 
 
