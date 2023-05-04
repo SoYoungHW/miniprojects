@@ -2,6 +2,7 @@
 using FakeIotDeviceApp.Models;
 using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -27,9 +28,9 @@ namespace FakeIotDeviceApp
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
-        Faker<SensorInfo> fakeHomeSensor = null; // 가짜 스마트홈 센서값 저장할 변수
+        Faker<SensorInfo> FakeHomeSensor { get; set; } // 가짜 스마트홈 센서값 저장할 변수
 
-        MqttClient client;
+        MqttClient Client { get; set; }
         Thread MqttThread { get; set; }
         public MainWindow()
         {
@@ -42,7 +43,7 @@ namespace FakeIotDeviceApp
         {
             var Rooms = new[] { "Bed", "Bath", "Living", "Dining" };
 
-            fakeHomeSensor = new Faker<SensorInfo>()
+            FakeHomeSensor = new Faker<SensorInfo>()
                 .RuleFor(s => s.Home_Id, "D101H703") // 임의로 픽스된 홈아이디 101동 703호(임의)
                 .RuleFor(s => s.Room_Name, f => f.PickRandom(Rooms)) // 실행할때마다 방이름이 계속 변경
                 .RuleFor(s => s.Sensing_DateTime, f => f.Date.Past(0)) // 현재시각이 생성
@@ -70,9 +71,17 @@ namespace FakeIotDeviceApp
                 while (true)
                 {
                     // 가짜 스마트홈 센서값 생성
-                    SensorInfo currInfo = fakeHomeSensor.Generate();
-                    Debug.WriteLine($"{currInfo.Home_Id} / {currInfo.Room_Name} / {currInfo.Sensing_DateTime} / {currInfo.Temp}");
-                    // 만든 센서값 MQTT브로커에 전송(publish)
+                    SensorInfo currInfo = FakeHomeSensor.Generate();
+
+                    // 릴리즈(배포)할때는 주석처리 OR 삭제
+                    // Debug.WriteLine($"{currInfo.Home_Id} / {currInfo.Room_Name} / {currInfo.Sensing_DateTime} / {currInfo.Temp}");
+
+                    
+                    // 객체직렬화(객체데이터를 xml이나 json등의 문자열로 변환)
+                    var jsonValue = JsonConvert.SerializeObject(currInfo, Formatting.Indented);
+
+                    // 만든 센서값 MQTT브로커에 전송(Publish)
+                    Client.Publish("SmartHome/IoTData/", Encoding.Default.GetBytes(jsonValue));
 
                     // RtbLog에 출력
 
@@ -84,6 +93,7 @@ namespace FakeIotDeviceApp
             MqttThread.Start();
         }
 
+        // 핵심처리 = 센싱된 데이터 값을 MQTT 브로커로 전송
         private void StartPublish()
         {
             
@@ -91,15 +101,15 @@ namespace FakeIotDeviceApp
 
         private void ConnectMqttBroker()
         {
-            client = new MqttClient(TxtMqttBrokerIp.Text);
-            client.Connect("SmartHomeDev"); // publish client ID를 지정
+            Client = new MqttClient(TxtMqttBrokerIp.Text);
+            Client.Connect("SmartHomeDev"); // publish Client ID를 지정
         }
 
         private void MetroWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            if (client != null && client.IsConnected == true)
+            if (Client != null && Client.IsConnected == true)
             {
-                client.Disconnect(); // 접속을 끊어주고
+                Client.Disconnect(); // 접속을 끊어주고
             }
 
             if (MqttThread != null)
