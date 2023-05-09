@@ -166,3 +166,5 @@ C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\o
 C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\obj\Debug\Views\MqttPopupWindow.baml
 C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\bin\Debug\M2Mqtt.Net.dll
 C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\bin\Debug\M2Mqtt.Net.pdb
+C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\obj\Debug\Views\RealTimeControl.g.cs
+C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\obj\Debug\Views\RealTimeControl.baml

@@ -12,4 +12,7 @@
 	- LiveCharts
 	- OxyChart
 	
+- SmartHome 시스템 문제점
+	- 실행 후 시간이 소요되면 UI제어가 느려짐
+	
 	

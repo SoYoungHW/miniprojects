@@ -8,7 +8,8 @@
     xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
     xmlns:local="clr-namespace:SmartHomeMonitoringApp"
     mc:Ignorable="d"
-    Title="SmartHome Monitoring System" Height="450" Width="800" Loaded="MetroWindow_Loaded">
+    Title="SmartHome Monitoring System" Height="450" Width="800"  MinHeight="450" MinWidth="670"
+    Loaded="MetroWindow_Loaded" Closing="MetroWindow_Closing">
     <mah:MetroWindow.IconTemplate>
         <DataTemplate>
             <iconPacks:PackIconMaterial Kind="HomeAutomation" Width="24"
@@ -36,11 +37,11 @@
                             <iconPacks:PackIconUnicons Kind="Play"/>
                         </MenuItem.Icon>
                     </MenuItem>
-                    <MenuItem x:Name="MnuStopSubscribe" Header="중지">
+                    <!--<MenuItem x:Name="MnuStopSubscribe" Header="중지">
                         <MenuItem.Icon>
                             <iconPacks:PackIconUnicons Kind="StopCircle"/>
                         </MenuItem.Icon>
-                    </MenuItem>
+                    </MenuItem>-->
                     <Separator/> <!--구분자-->
                     <MenuItem x:Name="MnuExitProgram" Header="끝내기" Click="MnuExitProgram_Click">
                         <MenuItem.Icon>
@@ -94,14 +95,14 @@
 
             <ToolBarTray>
                 <ToolBar Style="{StaticResource MahApps.Styles.ToolBar}">
-                    <Button x:Name="BtnStopSubscribe" ToolTip="구독시작">
+                    <Button x:Name="BtnStopSubscribe" ToolTip="구독시작" Click="MnuStartSubscribe_Click">
                         <iconPacks:PackIconUnicons Kind="Play"/>
                     </Button>
-                    <Button x:Name="BtnStartSubscribe" ToolTip="구독중지">
+                    <!--<Button x:Name="BtnStartSubscribe" ToolTip="구독중지">
                         <iconPacks:PackIconUnicons Kind="StopCircle"/>
-                    </Button>
+                    </Button>-->
                     <Separator/>
-                    <Button x:Name="BtnExitSubscribe" ToolTip="프로그램 끝내기">
+                    <Button x:Name="BtnExitSubscribe" ToolTip="프로그램 끝내기" Click="BtnExitSubscribe_Click">
                         <iconPacks:PackIconMaterialDesign Kind="ExitToApp"/>
                     </Button>
                 </ToolBar>
