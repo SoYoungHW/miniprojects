@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\App.xaml
-4410738441
+5-723463630
 
-91861448978
+10-494875507
 79814735205
-MainWindow.xaml;Views\DataBaseControl.xaml;Views\MqttPopupWindow.xaml;Views\RealTimeControl.xaml;
+MainWindow.xaml;Views\DataBaseControl.xaml;Views\MqttPopupWindow.xaml;Views\RealTimeControl.xaml;Views\VisualizationControl.xaml;
 
 False
 
