@@ -16,5 +16,5 @@ C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\A
 79814735205
 MainWindow.xaml;Views\DataBaseControl.xaml;Views\MqttPopupWindow.xaml;Views\RealTimeControl.xaml;
 
-True
+False
 
