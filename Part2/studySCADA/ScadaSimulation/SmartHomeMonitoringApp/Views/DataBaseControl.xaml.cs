@@ -30,6 +30,10 @@ namespace SmartHomeMonitoringApp.Views
         public bool IsConnected { get; set; }    
         Thread MqttThread { get; set; } // 없으면 UI 컨트롤이 어려워짐
 
+        // MQTT Subscribtion text 과도문제 속도저하를 잡기위해 변수
+        // 23.05.11 09:29 추가
+        int MaxCount { get; set; } = 10;
+
         public DataBaseControl()
         {
             InitializeComponent();
@@ -119,8 +123,15 @@ namespace SmartHomeMonitoringApp.Views
         {
             // 예외처리 필요
             this.Invoke(new Action(() => {
+                if (MaxCount <= 0)
+                {
+                    TxtLog.Text = string.Empty;
+                    TxtLog.Text += $">> 출력 수량 초기화\n";
+                    MaxCount = 10; // 테스트시에는 10
+                }
                 TxtLog.Text += $"{msg}\n";
                 TxtLog.ScrollToEnd();
+                MaxCount--;
             }));
         }
 
