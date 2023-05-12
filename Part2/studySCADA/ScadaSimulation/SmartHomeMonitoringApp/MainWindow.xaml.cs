@@ -17,6 +17,7 @@ using System.Diagnostics; // 필요
 using SmartHomeMonitoringApp.Views;
 using MahApps.Metro.Controls.Dialogs;
 using SmartHomeMonitoringApp.Logics;
+using ControlzEx.Theming;
 
 namespace SmartHomeMonitoringApp
 {
@@ -25,8 +26,8 @@ namespace SmartHomeMonitoringApp
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
-        
-
+        string DefaultTheme { get; set; } = "Light";
+        string DefaultAccent { get; set; } = "Lime";
        
         public MainWindow()
         {
@@ -124,5 +125,63 @@ namespace SmartHomeMonitoringApp
             about.Owner = this;
             about.ShowDialog();
         }
+
+        // 모든 테마와 액센트를 전부 처리할 체크이벤트 핸들러
+        private void MnuTheme_Clicked(object sender, RoutedEventArgs e)
+        {
+            // 클릭되는 테마가 라이트인지 다크인지 판단 -> 라이트를 클릭하면 다크는 체크해제, 다크를 클릭하면 라이트 체크해제
+            Debug.WriteLine((sender as MenuItem).Header);
+            // 액센트도 체크를 하는 값을 체크, 나머지 액센트 전부 체크해제
+
+            switch ((sender as MenuItem).Header)
+            {
+                case "Light":
+                    MnuLightTheme.IsChecked = true;
+                    MnuDarkTheme.IsChecked = false;
+                    DefaultTheme = "Light";
+                    break;
+
+                case "Dark":
+                    MnuDarkTheme.IsChecked = true;
+                    MnuLightTheme.IsChecked = false;
+                    DefaultTheme = "Dark";
+                    break;
+
+                case "Amber":
+                    MnuAccentAmber.IsChecked = true;
+                    MnuAccentBlue.IsChecked = false;
+                    MnuAccentPink.IsChecked = false;
+                    MnuAccentLime.IsChecked = false;
+                    DefaultAccent = "Amber";
+                    break;
+
+                case "Blue":
+                    MnuAccentAmber.IsChecked = false;
+                    MnuAccentBlue.IsChecked = true;
+                    MnuAccentPink.IsChecked = false;
+                    MnuAccentLime.IsChecked = false;
+                    DefaultAccent = "Blue";
+                    break;
+
+                case "Pink":
+                    MnuAccentAmber.IsChecked = false;
+                    MnuAccentBlue.IsChecked = false;
+                    MnuAccentPink.IsChecked = true;
+                    MnuAccentLime.IsChecked = false;
+                    DefaultAccent = "Pink";
+                    break;
+
+                case "Lime":
+                    MnuAccentAmber.IsChecked = false;
+                    MnuAccentBlue.IsChecked = false;
+                    MnuAccentPink.IsChecked = false;
+                    MnuAccentLime.IsChecked = true;
+                    DefaultAccent = "Lime";
+                    break;
+            }
+
+            ThemeManager.Current.ChangeTheme(this, $"{DefaultTheme}.{DefaultAccent}");
+        }
+
     }
 }
