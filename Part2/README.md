@@ -22,4 +22,4 @@
 < 온습도 더미데이터 시뮬레이터 / 스마트홈 모니터링 앱 >
 
 <img 
-src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/smarthomeWpf.gif" width="800" hieght="500">
+src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/smarthomeWpf.gif" width="800" hieght="600">
