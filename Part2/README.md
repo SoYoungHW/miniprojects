@@ -8,7 +8,7 @@
 	- Bogus (더미데이터 생성 라이브러리)
 	- Newtonsoft.json
 	- M2Mqtt (통신 라이브러리)
-	- DB 데이터 바인딩
+	- DB 데이터 바인딩 (MySQL)
 	- LiveCharts
 	- OxyChart
 	
@@ -22,8 +22,4 @@
 < 온습도 더미데이터 시뮬레이터 / 스마트홈 모니터링 앱 >
 
 <img 
-src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/smarthomeWpf.gif" width="800">
-	
-	 
-	
-	
+src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/smarthomeWpf.gif" width="900">
