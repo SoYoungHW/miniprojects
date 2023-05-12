@@ -1,26 +1,14 @@
-﻿using LiveCharts;
-using LiveCharts.Wpf;
-using MySql.Data.MySqlClient;
-using OxyPlot;
+﻿using MySql.Data.MySqlClient;
 using SmartHomeMonitoringApp.Logics;
-using SmartHomeMonitoringApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-using System.Linq;
-using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using OxyPlot;
+using OxyPlot.Series;
+using OxyPlot.Legends;
 
 namespace SmartHomeMonitoringApp.Views
 {
@@ -139,35 +127,54 @@ namespace SmartHomeMonitoringApp.Views
                     // MessageBox.Show("TotalData", ds.Tables["smarthomesensor"].Rows.Count.ToString()); // 갯수확인
                 }
 
-                // DB에서 가져온 데이터 차트에 뿌리도록 처리
-                if (ds.Tables[0].Rows.Count > 0)
+
+                // Create the plot model // 선택한 방의 이름이 타이틀로 나오도록
+                var tmp = new PlotModel { Title = $"{CboRoomName.SelectedValue} ROOM" };
+                var legend = new Legend
                 {
-                    // lvcSmartHome.Series.Clear();
-                    // MessageBox.Show("데이터출력가능");
-                    /* LineSeries tempSeries = new LineSeries
-                    {
-                        Title = "Temp",
-                        Stroke = new SolidColorBrush(Colors.Coral)
-                    };
+                    LegendBorder = OxyColors.Gray,
+                    LegendBackground = OxyColor.FromArgb(150, 255, 255, 255),
+                    LegendPosition = LegendPosition.TopRight,
+                    LegendPlacement = LegendPlacement.Outside
+                };
+                tmp.Legends.Add(legend); // 범례추가
 
-                    LineSeries humidSeries = new LineSeries
-                    {
-                        Title = "Humid",
-                        Stroke = new SolidColorBrush(Colors.Aquamarine)
-                    };
+                // Create two line series (markers are hidden by default)
+                var tempSeries = new LineSeries
+                {
+                    Title = "Temperature(℃)",
+                    MarkerType = MarkerType.Circle,
+                    Color = OxyColors.Coral // 라인색상
+                };
 
-                    IChartValues tempValues = new ChartValues<double>();
-                    IChartValues humidValues = new ChartValues<double>(); */
+                var humidSeries = new LineSeries
+                {
+                    Title = "Humidity(%)",
+                    MarkerType = MarkerType.Square,
+                    Color = OxyColors.SkyBlue
+                };
+
+                // DB에서 가져온 데이터 차트에 뿌리도록 처리
+                if (ds.Tables[0].Rows.Count > 0) // >=
+                {
+                    TotalDataCount = ds.Tables[0].Rows.Count;
+                    var count = 0;
 
                     foreach (DataRow row in ds.Tables[0].Rows) 
                     {
-                        Convert.ToDouble(row["Temp"]);
+                        tempSeries.Points.Add(new DataPoint(count++, Convert.ToDouble(row["Temp"])));
+                        humidSeries.Points.Add(new DataPoint(count++, Convert.ToDouble(row["Humid"])));
+                        
                     }
-
-                    // tempSeries.Values = tempValues;
-                    // lvcSmartHome.Series.Add(tempSeries);
-                    
                 }
+
+                // Add the series to the plot model
+                tmp.Series.Add(tempSeries);
+                tmp.Series.Add(humidSeries);
+
+                OpvSmartHome.Model = tmp;
+                LblTotalCount.Content = $"검색데이터 {TotalDataCount}개";
+
             }
             catch (Exception ex)
             {

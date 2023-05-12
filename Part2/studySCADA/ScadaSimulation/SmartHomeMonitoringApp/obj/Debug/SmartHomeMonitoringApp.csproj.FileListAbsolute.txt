@@ -170,3 +170,5 @@ C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\o
 C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\obj\Debug\Views\RealTimeControl.baml
 C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\obj\Debug\Views\VisualizationControl.g.cs
 C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\obj\Debug\Views\VisualizationControl.baml
+C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\obj\Debug\Views\About.g.cs
+C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\SmartHomeMonitoringApp\obj\Debug\Views\About.baml
