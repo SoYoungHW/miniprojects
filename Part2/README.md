@@ -19,10 +19,10 @@
 	- 대용량 데이터 차트는 OxyPlot을 사용
 
 	
-<SmartHome Monitoring System>
+< 온습도 더미데이터 시뮬레이터 / 스마트홈 모니터링 앱 >
 
 <img 
-src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/smarthomeWpf.png" width="800">
+src="https://raw.githubusercontent.com/SoYoungHW/miniprojects/main/images/smarthomeWpf.gif" width="800">
 	
 	 
 	
