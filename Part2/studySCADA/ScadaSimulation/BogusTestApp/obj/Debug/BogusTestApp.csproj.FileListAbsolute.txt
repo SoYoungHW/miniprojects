@@ -129,3 +129,5 @@ C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\BogusTestApp\bin\Debug\B
 C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\BogusTestApp\bin\Debug\Newtonsoft.Json.dll
 C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\BogusTestApp\bin\Debug\Bogus.xml
 C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\BogusTestApp\bin\Debug\Newtonsoft.Json.xml
+C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\BogusTestApp\bin\Debug\M2Mqtt.Net.dll
+C:\source\miniprojects\Part2\studySCADA\ScadaSimulation\BogusTestApp\bin\Debug\M2Mqtt.Net.pdb
